@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Noodles | Food Munch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #f9fbfe;
+      }
+
+      .noodles-container {
+        padding: 30px 20px;
+      }
+
+      .noodles-heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #183b56;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .noodles-description {
+        text-align: center;
+        font-size: 16px;
+        color: #5a7184;
+        margin-bottom: 40px;
+      }
+
+      .dish-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .dish-card {
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        margin: 20px;
+        width: 280px;
+        transition: transform 0.3s ease;
+      }
+
+      .dish-card:hover {
+        transform: scale(1.03);
+      }
+
+      .dish-img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .dish-content {
+        padding: 15px;
+      }
+
+      .dish-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #323f4b;
+        margin-bottom: 8px;
+      }
+
+      .dish-price {
+        font-size: 16px;
+        color: #d0b200;
+        margin-bottom: 10px;
+      }
+
+      .order-button {
+        background-image: linear-gradient(#d0b200, #a58d00);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .order-button:hover {
+        opacity: 0.9;
+      }
+
+      .back-button {
+        display: inline-block;
+        margin: 10px 20px;
+        color: #d0b200;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .back-button i {
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="home.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Menu</a>
+
+    <div class="noodles-container">
+      <h1 class="noodles-heading">Noodles</h1>
+      <p class="noodles-description">Slurp up happiness! Enjoy our variety of hot and tasty noodles made to satisfy every craving.</p>
+
+      <div class="dish-grid">
+        <!-- Dish Cards -->
+        <div class="dish-card">
+          <img src="hakka_noodles.jpeg" class="dish-img" alt="Hakka Noodles">
+          <div class="dish-content">
+            <h3 class="dish-title">Hakka Noodles</h3>
+            <p class="dish-price">₹180</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="schewazen_noodles.jpeg" class="dish-img" alt="Schezwan Noodles">
+          <div class="dish-content">
+            <h3 class="dish-title">Schezwan Noodles</h3>
+            <p class="dish-price">₹190</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="chicken_noodles.jpeg" class="dish-img" alt="Chicken Noodles">
+          <div class="dish-content">
+            <h3 class="dish-title">Chicken Noodles</h3>
+            <p class="dish-price">₹210</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="egg_noodles.jpeg" class="dish-img" alt="Egg Noodles">
+          <div class="dish-content">
+            <h3 class="dish-title">Egg Noodles</h3>
+            <p class="dish-price">₹200</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="veg_manchurian_noodles.jpeg" class="dish-img" alt="Veg Manchurian Noodles">
+          <div class="dish-content">
+            <h3 class="dish-title">Veg Manchurian Noodles</h3>
+            <p class="dish-price">₹185</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="paneer_chili_noodles.jpeg" class="dish-img" alt="Paneer Chilli Noodles">
+          <div class="dish-content">
+            <h3 class="dish-title">Paneer Chilli Noodles</h3>
+            <p class="dish-price">₹215</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        
+        <!-- Add more as desired -->
+      </div>
+    </div>
+  </body>
+</html>

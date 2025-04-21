@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Salads | Food Munch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #f9fbfe;
+      }
+
+      .salad-container {
+        padding: 30px 20px;
+      }
+
+      .salad-heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #183b56;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .salad-description {
+        text-align: center;
+        font-size: 16px;
+        color: #5a7184;
+        margin-bottom: 40px;
+      }
+
+      .dish-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .dish-card {
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        margin: 20px;
+        width: 280px;
+        transition: transform 0.3s ease;
+      }
+
+      .dish-card:hover {
+        transform: scale(1.03);
+      }
+
+      .dish-img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .dish-content {
+        padding: 15px;
+      }
+
+      .dish-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #323f4b;
+        margin-bottom: 8px;
+      }
+
+      .dish-price {
+        font-size: 16px;
+        color: #2e8b57;
+        margin-bottom: 10px;
+      }
+
+      .order-button {
+        background-image: linear-gradient(#2e8b57, #1e6b45);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .order-button:hover {
+        opacity: 0.9;
+      }
+
+      .back-button {
+        display: inline-block;
+        margin: 10px 20px;
+        color: #2e8b57;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .back-button i {
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="home.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Menu</a>
+
+    <div class="salad-container">
+      <h1 class="salad-heading">Fresh Salads</h1>
+      <p class="salad-description">Stay healthy and refreshed with our delicious, crisp, and colorful salad options!</p>
+
+      <div class="dish-grid">
+        <div class="dish-card">
+          <img src="greek_salad.jpeg" class="dish-img" alt="Greek Salad">
+          <div class="dish-content">
+            <h3 class="dish-title">Greek Salad</h3>
+            <p class="dish-price">₹180</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="Caesar_Salad.jpeg" class="dish-img" alt="Caesar Salad">
+          <div class="dish-content">
+            <h3 class="dish-title">Caesar Salad</h3>
+            <p class="dish-price">₹200</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="Chickpea_Salad.jpeg" class="dish-img" alt="Chickpea Salad">
+          <div class="dish-content">
+            <h3 class="dish-title">Chickpea Salad</h3>
+            <p class="dish-price">₹170</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="Quinoa_Salad.jpg" class="dish-img" alt="Quinoa Salad">
+          <div class="dish-content">
+            <h3 class="dish-title">Quinoa Salad</h3>
+            <p class="dish-price">₹220</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="Fruit-&-Nut-Salad.jpeg" class="dish-img" alt="Fruit & Nut Salad">
+          <div class="dish-content">
+            <h3 class="dish-title">Fruit & Nut Salad</h3>
+            <p class="dish-price">₹190</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="Avocado-Corn-Salad.jpeg" class="dish-img" alt="Avocado Corn Salad">
+          <div class="dish-content">
+            <h3 class="dish-title">Avocado Corn Salad</h3>
+            <p class="dish-price">₹210</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
