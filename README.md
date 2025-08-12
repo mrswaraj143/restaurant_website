@@ -123,5 +123,5 @@ This script reads `MONGO_URI` from `.env`, hashes the password with bcrypt, and 
 - Cannot open `home.html` after login:
   - Ensure the file exists under `public/` and the server is running without errors
 
-## License
-ISC
+
+
